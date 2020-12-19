@@ -1,6 +1,6 @@
 digraph G {
 
-    splines=true
+    splines=true;
 
     graph [
         charset = "UTF-8";
@@ -21,8 +21,8 @@ digraph G {
         str08[label="STR-08\nシナリオ／ミッション／キャンペーンゲーム"];
         str09[label="STR-09\nスコア・アンド・リセットゲーム"];
         str10[label="STR-10\nレガシーゲーム"];
-        color=blue
-        label="ゲームの構造"
+        color=blue;
+        label="ゲームの構造";
     }
 
     subgraph cluster_TRN {
@@ -43,8 +43,8 @@ digraph G {
         trn15[label="TRN-15\nインターリーブ・フェイズとシーケンシャル・フェイズ"];
         trn16[label="TRN-16\n1回休み"];
         trn17[label="TRN-17\n割り込み"];
-        color=blue
-        label="ターンオーダーとターン構造"
+        color=blue;
+        label="ターンオーダーとターン構造";
     }
 
     subgraph cluster_ACT {
@@ -66,8 +66,8 @@ digraph G {
         act16[label="ACT-16\n技術ツリー／技術トラック／トラックボーナス"];
         act17[label="ACT-17\nイベント"];
         act18[label="ACT-18\nナラティブチョイス"];
-        color=blue
-        label="アクション"
+        color=blue;
+        label="アクション";
     }
 
     subgraph cluster_RES {
@@ -93,8 +93,8 @@ digraph G {
         res20[label="RES-20\nアクションスピード"];
         res21[label="RES-21\nリロールとロック"];
         res22[label="RES-22\nキルスティール"];
-        color=blue
-        label="解決"
+        color=blue;
+        label="解決";
     }
 
     subgraph cluster_VIC {
@@ -118,8 +118,8 @@ digraph G {
         vic18[label="VIC-18\nキャッチ・ザ・リーダー"];
         vic19[label="VIC-19\nタグ・オブ・ウォー"];
         vic20[label="VIC-20\n最低が最高"];
-        color=blue
-        label="ゲーム終了と勝利"
+        color=blue;
+        label="ゲーム終了と勝利";
     }
 
     subgraph cluster_UNC {
@@ -134,8 +134,8 @@ digraph G {
         unc09[label="UNC-09\n確率管理"];
         unc10[label="UNC-10\nバリアブル・セットアップ"];
         unc11[label="UNC-11\n隠しコントロール"];
-        color=blue
-        label="不確実性"
+        color=blue;
+        label="不確実性";
     }
 
     subgraph cluster_ECO {
@@ -158,8 +158,8 @@ digraph G {
         eco17[label="ECO-17\n未選択リソースの価値向上"];
         eco18[label="ECO-18\n交渉"];
         eco19[label="ECO-19\n同盟"];
-        color=blue
-        label="エコノミー"
+        color=blue;
+        label="エコノミー";
     }
 
     subgraph cluster_AUC {
@@ -179,8 +179,8 @@ digraph G {
         auc14[label="AUC-14\n器用さによるオークション"];
         auc15[label="AUC-15\n固定配置オークション"];
         auc16[label="AUC-16\n優先ダッチオークション"];
-        color=blue
-        label="オークション"
+        color=blue;
+        label="オークション";
     }
 
     subgraph cluster_WPL {
@@ -192,8 +192,8 @@ digraph G {
         wpl06[label="WPL-06\nシングルワーカー"];
         wpl07[label="WPL-07\n建物アクションと報酬"];
         wpl08[label="WPL-08\nターンオーダーと解決順序"];
-        color=blue
-        label="ワーカープレイスメント"
+        color=blue;
+        label="ワーカープレイスメント";
     }
 
     subgraph cluster_MOV {
@@ -221,8 +221,8 @@ digraph G {
         mov22[label="MOV-22\n複数のマップ"];
         mov23[label="MOV-23\nショートカット"];
         mov24[label="MOV-24\n隠れ移動"];
-        color=blue
-        label="移動"
+        color=blue;
+        label="移動";
     }
 
     subgraph cluster_ARC {
@@ -234,8 +234,8 @@ digraph G {
         arc06[label="ARC-06\nフォースプロジェクション"];
         arc07[label="ARC-07\nゾーン・オブ・コントロール"];
         arc08[label="ARC-08\nライン・オブ・サイト"];
-        color=blue
-        label="エリアコントロール"
+        color=blue;
+        label="エリアコントロール";
     }
 
     subgraph cluster_SET {
@@ -244,8 +244,8 @@ digraph G {
         set03[label="SET-03\nグリッドカバー"];
         set04[label="SET-04\nネットワークビルド"];
         set05[label="SET-05\nコンボ能力"];
-        color=blue
-        label="セットコレクション"
+        color=blue;
+        label="セットコレクション";
     }
 
     subgraph cluster_CAR {
@@ -255,8 +255,8 @@ digraph G {
         car04[label="CAR-04\nカードドローと上限、デッキ切れ"];
         car05[label="CAR-05\nデッキビルド"];
         car06[label="CAR-06\nドラフト"];
-        color=blue
-        label="カードメカニクス"
+        color=blue;
+        label="カードメカニクス";
     }
 
 str01 -> act12
