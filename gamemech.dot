@@ -1,13 +1,10 @@
-digraph G {
+graph G {
 
     splines=true;
 
     graph [
         charset = "UTF-8";
         layout = fdp;
-    ];
-    edge [
-        dir = none;
     ];
 
     subgraph cluster_STR {
@@ -259,495 +256,495 @@ digraph G {
         label="カードメカニクス";
     }
 
-str01 -> act12
-str01 -> unc10
+str01 -- act12
+str01 -- unc10
 
-str03 -> str07
-str03 -> unc04
+str03 -- str07
+str03 -- unc04
 
-str04 -> str02
+str04 -- str02
 
-str05 -> str02
+str05 -- str02
 
-str07 -> str02
-str07 -> str03
-str07 -> unc04
+str07 -- str02
+str07 -- str03
+str07 -- unc04
 
-str10 -> act15
-str10 -> car05
+str10 -- act15
+str10 -- car05
 
-trn01 -> trn04
-trn01 -> trn05
+trn01 -- trn04
+trn01 -- trn05
 
-trn02 -> vic01
-trn02 -> vic06
-trn02 -> vic18
+trn02 -- vic01
+trn02 -- vic06
+trn02 -- vic18
 
-trn03 -> res18
-trn03 -> auc03
-trn03 -> arc02
+trn03 -- res18
+trn03 -- auc03
+trn03 -- arc02
 
-trn04 -> str05
-trn04 -> trn01
-trn04 -> act08
+trn04 -- str05
+trn04 -- trn01
+trn04 -- act08
 
-trn05 -> trn02
-trn05 -> trn06
-trn05 -> act02
-trn05 -> car01
+trn05 -- trn02
+trn05 -- trn06
+trn05 -- act02
+trn05 -- car01
 
-trn06 -> car06
+trn06 -- car06
 
-trn07 -> trn08
+trn07 -- trn08
 
-trn08 -> trn07
+trn08 -- trn07
 
-trn09 -> trn10
-trn09 -> unc01
-trn09 -> eco18
+trn09 -- trn10
+trn09 -- unc01
+trn09 -- eco18
 
-trn10 -> trn09
-trn10 -> trn16
-trn10 -> act08
-trn10 -> unc01
-trn10 -> car06
+trn10 -- trn09
+trn10 -- trn16
+trn10 -- act08
+trn10 -- unc01
+trn10 -- car06
 
-trn11 -> car05
+trn11 -- car05
 
-trn12 -> trn07
+trn12 -- trn07
 
-trn14 -> trn07
-trn14 -> trn12
-trn14 -> trn16
+trn14 -- trn07
+trn14 -- trn12
+trn14 -- trn16
 
-trn15 -> trn02
+trn15 -- trn02
 
-trn16 -> trn14
-trn16 -> act03
-trn16 -> mov02
+trn16 -- trn14
+trn16 -- act03
+trn16 -- mov02
 
-trn17 -> trn16
+trn17 -- trn16
 
-act02 -> trn10
-act02 -> act08
-act02 -> res19
-act02 -> unc05
-act02 -> car06
+act02 -- trn10
+act02 -- act08
+act02 -- res19
+act02 -- unc05
+act02 -- car06
 
-act03 -> act13
+act03 -- act13
 
-act04 -> act01
-act04 -> act17
+act04 -- act01
+act04 -- act17
 
-act05 -> trn11
+act05 -- trn11
 
-act06 -> trn15
-act06 -> unc01
+act06 -- trn15
+act06 -- unc01
 
-act07 -> trn13
-act07 -> act06
-act07 -> act08
+act07 -- trn13
+act07 -- act06
+act07 -- act08
 
-act08 -> trn10
-act08 -> trn17
-act08 -> act02
-act08 -> car05
+act08 -- trn10
+act08 -- trn17
+act08 -- act02
+act08 -- car05
 
-act09 -> trn15
-act09 -> act06
+act09 -- trn15
+act09 -- act06
 
-act10 -> act01
-act10 -> mov12
+act10 -- act01
+act10 -- mov12
 
-act11 -> act02
-act11 -> act03
-act11 -> act05
-act11 -> act10
+act11 -- act02
+act11 -- act03
+act11 -- act05
+act11 -- act10
 
-act14 -> act12
-act14 -> act13
-act14 -> res18
-act14 -> auc04
+act14 -- act12
+act14 -- act13
+act14 -- res18
+act14 -- auc04
 
-act16 -> act15
+act16 -- act15
 
-act18 -> act15
-act18 -> res02
+act18 -- act15
+act18 -- res02
 
-res01 -> res02
-res01 -> res18
+res01 -- res02
+res01 -- res18
 
-res02 -> res01
+res02 -- res01
 
-res03 -> res04
+res03 -- res04
 
-res05 -> res01
-res05 -> res02
+res05 -- res01
+res05 -- res02
 
-res06 -> trn17
-res06 -> act03
-res06 -> unc01
+res06 -- trn17
+res06 -- act03
+res06 -- unc01
 
-res07 -> res01
-res07 -> res02
-res07 -> res08
-res07 -> auc05
+res07 -- res01
+res07 -- res02
+res07 -- res08
+res07 -- auc05
 
-res08 -> trn09
-res08 -> res07
-res08 -> unc01
+res08 -- trn09
+res08 -- res07
+res08 -- unc01
 
-res09 -> arc02
+res09 -- arc02
 
-res10 -> vic11
+res10 -- vic11
 
-res11 -> mov03
-res11 -> mov13
+res11 -- mov03
+res11 -- mov13
 
-res12 -> arc02
+res12 -- arc02
 
-res13 -> res02
-res13 -> res14
+res13 -- res02
+res13 -- res14
 
-res14 -> res01
-res14 -> unc01
-res14 -> auc04
+res14 -- res01
+res14 -- unc01
+res14 -- auc04
 
-res15 -> arc02
+res15 -- arc02
 
-res16 -> vic18
+res16 -- vic18
 
-res17 -> str03
+res17 -- str03
 
-res18 -> eco18
+res18 -- eco18
 
-res20 -> trn09
-res20 -> res18
+res20 -- trn09
+res20 -- res18
 
-res21 -> res02
-res21 -> unc02
+res21 -- res02
+res21 -- unc02
 
-res22 -> str05
-res22 -> act15
+res22 -- str05
+res22 -- act15
 
-vic01 -> vic02
-vic01 -> vic12
-vic01 -> arc02
-vic01 -> car06
+vic01 -- vic02
+vic01 -- vic12
+vic01 -- arc02
+vic01 -- car06
 
-vic02 -> vic01
-vic02 -> vic11
+vic02 -- vic01
+vic02 -- vic11
 
-vic04 -> auc08
+vic04 -- auc08
 
-vic05 -> vic06
-vic05 -> vic15
+vic05 -- vic06
+vic05 -- vic15
 
-vic06 -> act15
+vic06 -- act15
 
-vic07 -> vic01
+vic07 -- vic01
 
-vic08 -> str03
-vic08 -> unc04
+vic08 -- str03
+vic08 -- unc04
 
-vic09 -> vic05
+vic09 -- vic05
 
-vic10 -> str02
+vic10 -- str02
 
-vic11 -> vic06
-vic11 -> vic07
-vic11 -> vic10
+vic11 -- vic06
+vic11 -- vic07
+vic11 -- vic10
 
-vic13 -> str03
-vic13 -> str05
-vic13 -> trn07
+vic13 -- str03
+vic13 -- str05
+vic13 -- trn07
 
-vic14 -> vic07
-vic14 -> set02
-vic14 -> set04
+vic14 -- vic07
+vic14 -- set02
+vic14 -- set04
 
-vic15 -> str02
-vic15 -> vic19
+vic15 -- str02
+vic15 -- vic19
 
-vic16 -> vic14
+vic16 -- vic14
 
-vic17 -> vic18
+vic17 -- vic18
 
-vic18 -> vic04
-vic18 -> vic17
+vic18 -- vic04
+vic18 -- vic17
 
-vic19 -> vic11
-vic19 -> vic15
+vic19 -- vic11
+vic19 -- vic15
 
-unc01 -> act02
-unc01 -> res01
-unc01 -> vic07
-unc01 -> unc04
-unc01 -> car01
+unc01 -- act02
+unc01 -- res01
+unc01 -- vic07
+unc01 -- unc04
+unc01 -- car01
 
-unc02 -> unc01
-unc02 -> car05
+unc02 -- unc01
+unc02 -- car05
 
-unc03 -> car01
+unc03 -- car01
 
-unc04 -> str02
-unc04 -> str03
-unc04 -> str07
-unc04 -> vic06
-unc04 -> vic08
-unc04 -> unc01
+unc04 -- str02
+unc04 -- str03
+unc04 -- str07
+unc04 -- vic06
+unc04 -- vic08
+unc04 -- unc01
 
-unc05 -> str02
-unc05 -> unc04
+unc05 -- str02
+unc05 -- unc04
 
-unc06 -> str02
-unc06 -> str07
+unc06 -- str02
+unc06 -- str07
 
-unc07 -> act17
+unc07 -- act17
 
-unc08 -> unc01
-unc08 -> unc04
+unc08 -- unc01
+unc08 -- unc04
 
-unc09 -> unc01
-unc09 -> car05
+unc09 -- unc01
+unc09 -- car05
 
-unc10 -> unc07
-unc10 -> unc08
-unc10 -> car06
+unc10 -- unc07
+unc10 -- unc08
+unc10 -- car06
 
-unc11 -> unc01
+unc11 -- unc01
 
-eco02 -> vic18
-eco02 -> eco01
-eco02 -> eco18
+eco02 -- vic18
+eco02 -- eco01
+eco02 -- eco18
 
-eco03 -> eco01
+eco03 -- eco01
 
-eco04 -> car05
+eco04 -- car05
 
-eco05 -> eco01
-eco05 -> eco03
-eco05 -> eco06
-eco05 -> eco07
-eco05 -> eco12
-eco05 -> eco14
-eco05 -> auc12
-eco05 -> mov02
+eco05 -- eco01
+eco05 -- eco03
+eco05 -- eco06
+eco05 -- eco07
+eco05 -- eco12
+eco05 -- eco14
+eco05 -- auc12
+eco05 -- mov02
 
-eco08 -> car05
+eco08 -- car05
 
-eco10 -> act16
-eco10 -> eco01
-eco10 -> eco11
+eco10 -- act16
+eco10 -- eco01
+eco10 -- eco11
 
-eco11 -> act15
-eco11 -> act16
-eco11 -> eco10
+eco11 -- act15
+eco11 -- act16
+eco11 -- eco10
 
-eco13 -> vic14
-eco13 -> arc02
-eco13 -> set04
-eco13 -> car04
+eco13 -- vic14
+eco13 -- arc02
+eco13 -- set04
+eco13 -- car04
 
-eco14 -> eco13
+eco14 -- eco13
 
-eco15 -> car06
+eco15 -- car06
 
-eco16 -> unc01
-eco16 -> eco02
-eco16 -> arc02
+eco16 -- unc01
+eco16 -- eco02
+eco16 -- arc02
 
-eco17 -> auc08
+eco17 -- auc08
 
-eco18 -> trn09
-eco18 -> res15
-eco18 -> unc04
-eco18 -> eco02
-eco18 -> eco16
+eco18 -- trn09
+eco18 -- res15
+eco18 -- unc04
+eco18 -- eco02
+eco18 -- eco16
 
-eco19 -> unc04
-eco19 -> eco18
-eco19 -> car01
+eco19 -- unc04
+eco19 -- eco18
+eco19 -- car01
 
-auc02 -> auc01
-auc02 -> auc08
+auc02 -- auc01
+auc02 -- auc08
 
-auc03 -> auc01
-auc03 -> auc02
-auc03 -> car06
+auc03 -- auc01
+auc03 -- auc02
+auc03 -- car06
 
-auc04 -> res18
-auc04 -> vic18
-auc04 -> auc03
+auc04 -- res18
+auc04 -- vic18
+auc04 -- auc03
 
-auc05 -> unc01
-auc05 -> auc06
+auc05 -- unc01
+auc05 -- auc06
 
-auc06 -> act01
-auc06 -> arc02
+auc06 -- act01
+auc06 -- arc02
 
-auc07 -> auc04
-auc07 -> auc06
-auc07 -> car06
+auc07 -- auc04
+auc07 -- auc06
+auc07 -- car06
 
-auc08 -> act01
-auc08 -> vic04
-auc08 -> eco17
+auc08 -- act01
+auc08 -- vic04
+auc08 -- eco17
 
-auc09 -> auc02
-auc09 -> auc03
-auc09 -> auc04
-auc09 -> auc08
+auc09 -- auc02
+auc09 -- auc03
+auc09 -- auc04
+auc09 -- auc08
 
-auc10 -> auc06
+auc10 -- auc06
 
-auc11 -> auc04
-auc11 -> auc05
-auc11 -> auc15
-auc11 -> auc16
-auc11 -> arc02
+auc11 -- auc04
+auc11 -- auc05
+auc11 -- auc15
+auc11 -- auc16
+auc11 -- arc02
 
-auc13 -> auc03
-auc13 -> auc04
-auc13 -> auc06
-auc13 -> auc11
-auc13 -> car01
+auc13 -- auc03
+auc13 -- auc04
+auc13 -- auc06
+auc13 -- auc11
+auc13 -- car01
 
-auc14 -> trn07
-auc14 -> unc03
+auc14 -- trn07
+auc14 -- unc03
 
-auc15 -> auc06
-auc15 -> auc11
+auc15 -- auc06
+auc15 -- auc11
 
-auc16 -> auc08
-auc16 -> auc11
+auc16 -- auc08
+auc16 -- auc11
 
-wpl02 -> eco11
-wpl02 -> wpl01
+wpl02 -- eco11
+wpl02 -- wpl01
 
-wpl05 -> act02
-wpl05 -> eco14
-wpl05 -> auc08
-wpl05 -> wpl04
+wpl05 -- act02
+wpl05 -- eco14
+wpl05 -- auc08
+wpl05 -- wpl04
 
-wpl06 -> trn10
-wpl06 -> trn13
-wpl06 -> act01
-wpl06 -> act02
-wpl06 -> act10
+wpl06 -- trn10
+wpl06 -- trn13
+wpl06 -- act01
+wpl06 -- act02
+wpl06 -- act10
 
-wpl07 -> trn10
-wpl07 -> act02
-wpl07 -> eco11
+wpl07 -- trn10
+wpl07 -- act02
+wpl07 -- eco11
 
-wpl08 -> trn05
-wpl08 -> trn11
-wpl08 -> auc08
-wpl08 -> wpl03
-wpl08 -> wpl05
-wpl08 -> arc02
-wpl08 -> car06
+wpl08 -- trn05
+wpl08 -- trn11
+wpl08 -- auc08
+wpl08 -- wpl03
+wpl08 -- wpl05
+wpl08 -- arc02
+wpl08 -- car06
 
-mov01 -> vic07
-mov01 -> mov02
+mov01 -- vic07
+mov01 -- mov02
 
-mov02 -> unc02
-mov02 -> unc09
-mov02 -> mov07
+mov02 -- unc02
+mov02 -- unc09
+mov02 -- mov07
 
-mov03 -> eco11
+mov03 -- eco11
 
-mov04 -> act01
+mov04 -- act01
 
-mov05 -> mov02
+mov05 -- mov02
 
-mov06 -> mov04
+mov06 -- mov04
 
-mov07 -> mov04
+mov07 -- mov04
 
-mov10 -> act06
+mov10 -- act06
 
-mov11 -> vic07
+mov11 -- vic07
 
-mov12 -> act10
+mov12 -- act10
 
-mov14 -> mov10
+mov14 -- mov10
 
-mov15 -> act05
-mov15 -> unc01
+mov15 -- act05
+mov15 -- unc01
 
-mov16 -> vic18
-mov16 -> set02
+mov16 -- vic18
+mov16 -- set02
 
-mov18 -> wpl05
+mov18 -- wpl05
 
-mov19 -> act15
+mov19 -- act15
 
-mov20 -> act03
-mov20 -> mov06
-mov20 -> mov10
+mov20 -- act03
+mov20 -- mov06
+mov20 -- mov10
 
-mov22 -> set04
+mov22 -- set04
 
-mov23 -> mov02
+mov23 -- mov02
 
-mov24 -> act06
-mov24 -> mov01
-mov24 -> arc08
+mov24 -- act06
+mov24 -- mov01
+mov24 -- arc08
 
-arc01 -> eco14
+arc01 -- eco14
 
-arc02 -> res12
-arc02 -> res18
-arc02 -> auc11
+arc02 -- res12
+arc02 -- res18
+arc02 -- auc11
 
-arc03 -> arc02
+arc03 -- arc02
 
-arc05 -> vic01
-arc05 -> arc06
-arc05 -> arc08
+arc05 -- vic01
+arc05 -- arc06
+arc05 -- arc08
 
-arc06 -> res12
-arc06 -> arc02
+arc06 -- res12
+arc06 -- arc02
 
-arc07 -> mov04
-arc07 -> arc06
+arc07 -- mov04
+arc07 -- arc06
 
-arc08 -> mov01
-arc08 -> arc06
+arc08 -- mov01
+arc08 -- arc06
 
-set01 -> unc02
+set01 -- unc02
 
-set02 -> res12
-set02 -> arc02
+set02 -- res12
+set02 -- arc02
 
-set03 -> arc02
+set03 -- arc02
 
-set04 -> vic14
-set04 -> eco11
-set04 -> wpl05
-set04 -> set01
-set04 -> set02
+set04 -- vic14
+set04 -- eco11
+set04 -- wpl05
+set04 -- set01
+set04 -- set02
 
-set05 -> arc06
-set05 -> set01
-set05 -> car06
+set05 -- arc06
+set05 -- set01
+set05 -- car06
 
-car01 -> unc03
-car01 -> auc04
-car01 -> auc07
+car01 -- unc03
+car01 -- auc04
+car01 -- auc07
 
-car02 -> car01
+car02 -- car01
 
-car04 -> str02
-car04 -> eco02
-car04 -> car03
+car04 -- str02
+car04 -- eco02
+car04 -- car03
 
-car05 -> act16
-car05 -> set05
+car05 -- act16
+car05 -- set05
 
-car06 -> act02
-car06 -> set05
+car06 -- act02
+car06 -- set05
 
 }
 
