@@ -3,27 +3,6 @@ graph G {
 		layout=fdp,
 		splines=true
 	];
-	subgraph cluster_AUC {
-		graph [color=blue,
-			label=オークション
-		];
-		auc01	[label="AUC-01\n公開オークション"];
-		auc02	[label="AUC-02\nイングリッシュオークション"];
-		auc03	[label="AUC-03\nパスまでターンオーダーオークション"];
-		auc04	[label="AUC-04\n封印入札オークション"];
-		auc05	[label="AUC-05\nキャンセルのある封印入札"];
-		auc06	[label="AUC-06\n制約付き入札"];
-		auc07	[label="AUC-07\n一周オークション"];
-		auc08	[label="AUC-08\nダッチオークション"];
-		auc09	[label="AUC-09\n2位入札オークション"];
-		auc10	[label="AUC-10\nセレクションオーダービッド"];
-		auc11	[label="AUC-11\nマルチロットオークション"];
-		auc12	[label="AUC-12\nクローズドエコノミーオークション"];
-		auc13	[label="AUC-13\nリバースオークション"];
-		auc14	[label="AUC-14\n器用さによるオークション"];
-		auc15	[label="AUC-15\n固定配置オークション"];
-		auc16	[label="AUC-16\n優先ダッチオークション"];
-	}
 	subgraph cluster_ECO {
 		graph [color=blue,
 			label=エコノミー
@@ -47,35 +26,6 @@ graph G {
 		eco17	[label="ECO-17\n未選択リソースの価値向上"];
 		eco18	[label="ECO-18\n交渉"];
 		eco19	[label="ECO-19\n同盟"];
-	}
-	subgraph cluster_WPL {
-		graph [color=blue,
-			label=ワーカープレイスメント
-		];
-		wpl01	[label="WPL-01\n標準ワーカープレイスメント"];
-		wpl02	[label="WPL-02\nタイプの異なるワーカー"];
-		wpl03	[label="WPL-03\nワーカーの獲得と喪失"];
-		wpl04	[label="WPL-04\nダイスのワーカー"];
-		wpl05	[label="WPL-05\n建物の追加とブロッキング"];
-		wpl06	[label="WPL-06\nシングルワーカー"];
-		wpl07	[label="WPL-07\n建物アクションと報酬"];
-		wpl08	[label="WPL-08\nターンオーダーと解決順序"];
-	}
-	subgraph cluster_UNC {
-		graph [color=blue,
-			label=不確実性
-		];
-		unc01	[label="UNC-01\nベットとブラフ"];
-		unc02	[label="UNC-02\nプッシュ・ユア・ラック"];
-		unc03	[label="UNC-03\nメモリー"];
-		unc04	[label="UNC-04\n隠し役割"];
-		unc05	[label="UNC-05\n非対称情報を持つ役割"];
-		unc06	[label="UNC-06\nコミュニケーション制限"];
-		unc07	[label="UNC-07\n未知の情報"];
-		unc08	[label="UNC-08\n隠し情報"];
-		unc09	[label="UNC-09\n確率管理"];
-		unc10	[label="UNC-10\nバリアブル・セットアップ"];
-		unc11	[label="UNC-11\n隠しコントロール"];
 	}
 	subgraph cluster_RES {
 		graph [color=blue,
@@ -103,6 +53,42 @@ graph G {
 		res20	[label="RES-20\nアクションスピード"];
 		res21	[label="RES-21\nリロールとロック"];
 		res22	[label="RES-22\nキルスティール"];
+	}
+	subgraph cluster_ACT {
+		graph [color=blue,
+			label=アクション
+		];
+		act01	[label="ACT-01\nアクションポイント"];
+		act02	[label="ACT-02\nアクションドラフト"];
+		act03	[label="ACT-03\nアクションの回復"];
+		act04	[label="ACT-04\nアクション／イベント"];
+		act05	[label="ACT-05\nコマンドカード"];
+		act06	[label="ACT-06\nアクションキュー"];
+		act07	[label="ACT-07\n共有アクションキュー"];
+		act08	[label="ACT-08\nフォロー"];
+		act09	[label="ACT-09\nオーダーカウンター"];
+		act10	[label="ACT-10\nロンデル"];
+		act11	[label="ACT-11\nアクションの選択制限"];
+		act12	[label="ACT-12\nバリアブル・プレイヤーパワー"];
+		act13	[label="ACT-13\n「ゲーム中1回きり」の能力"];
+		act14	[label="ACT-14\nアドバンテージトークン"];
+		act15	[label="ACT-15\nゲートとアンロック"];
+		act16	[label="ACT-16\n技術ツリー／技術トラック／トラックボーナス"];
+		act17	[label="ACT-17\nイベント"];
+		act18	[label="ACT-18\nナラティブチョイス"];
+	}
+	subgraph cluster_WPL {
+		graph [color=blue,
+			label=ワーカープレイスメント
+		];
+		wpl01	[label="WPL-01\n標準ワーカープレイスメント"];
+		wpl02	[label="WPL-02\nタイプの異なるワーカー"];
+		wpl03	[label="WPL-03\nワーカーの獲得と喪失"];
+		wpl04	[label="WPL-04\nダイスのワーカー"];
+		wpl05	[label="WPL-05\n建物の追加とブロッキング"];
+		wpl06	[label="WPL-06\nシングルワーカー"];
+		wpl07	[label="WPL-07\n建物アクションと報酬"];
+		wpl08	[label="WPL-08\nターンオーダーと解決順序"];
 	}
 	subgraph cluster_TRN {
 		graph [color=blue,
@@ -151,6 +137,43 @@ graph G {
 		vic19	[label="VIC-19\nタグ・オブ・ウォー"];
 		vic20	[label="VIC-20\n最低が最高"];
 	}
+	subgraph cluster_UNC {
+		graph [color=blue,
+			label=不確実性
+		];
+		unc01	[label="UNC-01\nベットとブラフ"];
+		unc02	[label="UNC-02\nプッシュ・ユア・ラック"];
+		unc03	[label="UNC-03\nメモリー"];
+		unc04	[label="UNC-04\n隠し役割"];
+		unc05	[label="UNC-05\n非対称情報を持つ役割"];
+		unc06	[label="UNC-06\nコミュニケーション制限"];
+		unc07	[label="UNC-07\n未知の情報"];
+		unc08	[label="UNC-08\n隠し情報"];
+		unc09	[label="UNC-09\n確率管理"];
+		unc10	[label="UNC-10\nバリアブル・セットアップ"];
+		unc11	[label="UNC-11\n隠しコントロール"];
+	}
+	subgraph cluster_AUC {
+		graph [color=blue,
+			label=オークション
+		];
+		auc01	[label="AUC-01\n公開オークション"];
+		auc02	[label="AUC-02\nイングリッシュオークション"];
+		auc03	[label="AUC-03\nパスまでターンオーダーオークション"];
+		auc04	[label="AUC-04\n封印入札オークション"];
+		auc05	[label="AUC-05\nキャンセルのある封印入札"];
+		auc06	[label="AUC-06\n制約付き入札"];
+		auc07	[label="AUC-07\n一周オークション"];
+		auc08	[label="AUC-08\nダッチオークション"];
+		auc09	[label="AUC-09\n2位入札オークション"];
+		auc10	[label="AUC-10\nセレクションオーダービッド"];
+		auc11	[label="AUC-11\nマルチロットオークション"];
+		auc12	[label="AUC-12\nクローズドエコノミーオークション"];
+		auc13	[label="AUC-13\nリバースオークション"];
+		auc14	[label="AUC-14\n器用さによるオークション"];
+		auc15	[label="AUC-15\n固定配置オークション"];
+		auc16	[label="AUC-16\n優先ダッチオークション"];
+	}
 	subgraph cluster_STR {
 		graph [color=blue,
 			label=ゲームの構造
@@ -165,29 +188,6 @@ graph G {
 		str08	[label="STR-08\nシナリオ／ミッション／キャンペーンゲーム"];
 		str09	[label="STR-09\nスコア・アンド・リセットゲーム"];
 		str10	[label="STR-10\nレガシーゲーム"];
-	}
-	subgraph cluster_ACT {
-		graph [color=blue,
-			label=アクション
-		];
-		act01	[label="ACT-01\nアクションポイント"];
-		act02	[label="ACT-02\nアクションドラフト"];
-		act03	[label="ACT-03\nアクションの回復"];
-		act04	[label="ACT-04\nアクション／イベント"];
-		act05	[label="ACT-05\nコマンドカード"];
-		act06	[label="ACT-06\nアクションキュー"];
-		act07	[label="ACT-07\n共有アクションキュー"];
-		act08	[label="ACT-08\nフォロー"];
-		act09	[label="ACT-09\nオーダーカウンター"];
-		act10	[label="ACT-10\nロンデル"];
-		act11	[label="ACT-11\nアクションの選択制限"];
-		act12	[label="ACT-12\nバリアブル・プレイヤーパワー"];
-		act13	[label="ACT-13\n「ゲーム中1回きり」の能力"];
-		act14	[label="ACT-14\nアドバンテージトークン"];
-		act15	[label="ACT-15\nゲートとアンロック"];
-		act16	[label="ACT-16\n技術ツリー／技術トラック／トラックボーナス"];
-		act17	[label="ACT-17\nイベント"];
-		act18	[label="ACT-18\nナラティブチョイス"];
 	}
 	subgraph cluster_MOV {
 		graph [color=blue,
