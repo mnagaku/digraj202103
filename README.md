@@ -1,66 +1,16 @@
-# 「ゲームメカニクス大全」のパターンランゲージ化について
+# 書籍「ゲームメカニクス大全」のパターン・ランゲージ化に向けて
 
-## 方針
+ここでは[日本デジタルゲーム学会 第11回年次大会](http://digrajapan.org/conf11th/) 2021/3/14（日）15:40～17:00に発表予定の研究に関するデータやコードを提供しています。
 
-- パターンマップを作って、見通しを良くする
-- 関係を整理・分類して、見通しを良くする
-- 分かりやすくなった関係を使って、デザイン時の活用を例示する
+## 動く論文
 
-## TODO
+### Google Colaboratory
 
-### gamemech.dotのチェック
+以下のリンクから実行できます。
 
-「ゲームメカニクス大全」から作ったgamemech.dotに、転記の抜け漏れ・誤りがないか確認する。
+<a href="https://colab.research.google.com/github/mnagaku/digraj202103/blob/master/paper.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
-### パターン間の関連付けが片方向なので双方向に整理する
+### Jupyter Notebook
 
-gamemech.dotの関連表記から隣接行列を生成して、対角線で折り返す。Pythonで自前コード書いて処理するか、dot言語のパーサを探すかする。
-
-片方向を単純に双方向化して問題ないか確認しておきたい。けどチェックする組み合わせが多すぎるので無理かも知れん。
-
-### 関連付けを種類分けする
-
-継承関係：同一カテゴリ内のみに存在する。一方がもう一方から派生している
-
-相乗効果のある関係：複数のパターンを同時（ここで言う同時とは、1つのゲームの中にそれらのパターンを採用するという意味）に使うと、プレイに好ましいダイナミクスを生じる
-
-強い相反関係：同時に組み込めない相反するパターン
-
-弱い相反関係：同時に組み込めるが効果を減じてしまうパターン
-
-※関係の命名はもっと良いのがあれば、それで
-
-※分類は吟味しても良い
-
-### デザイン時の活用の例示
-
-何かでっち上げる。
-
-## パターンマップの生成方法
-
-gamemech.dotにdot言語でソースが書かれているので、例えば以下のコマンドでレンダリングできる。
-
-SVGの生成
-```
-$ dot -Tsvg gamemech.dot -ogamemech.svg
-```
-
-PNGの生成
-```
-$ dot -Tpng gamemech.dot -ogamemech.png
-```
-
-参考：
-https://graphviz.org/
-
-## 予備知識
-
-[ワークショップ「ゲーム開発チームにおけるパトレット」](https://www.slideshare.net/mnagaku/ss-15940999)
-
-[教育・研究クラウドサービスのためのパターンランゲージ](https://www.slideshare.net/mnagaku/ss-91096038)
-
-[The pattern language in The Golden Bough](https://dl.acm.org/doi/abs/10.1145/2524629.2524647)
-
-[パタン・ランゲージ](https://www.amazon.co.jp/dp/4306041719)
-
+Jupyter環境に git clone してから実行できます。
 
