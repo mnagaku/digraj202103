@@ -14,3 +14,7 @@
 
 Jupyter環境に git clone してから実行できます。
 
+## 発表資料
+
+[RISE](https://rise.readthedocs.io/en/stable/)環境でスライド実行するための[スライド用ノートブック](slide.ipynb)で発表を行いました。上記の「動く論文」の簡約版となります。
+
